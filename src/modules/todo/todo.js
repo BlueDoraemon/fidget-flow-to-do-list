@@ -1,9 +1,15 @@
-'use strict';
 
-//factory function for creating an object
-
-
-class todo {
+class Project {
+    constructor(name, description){
+        this.name = name;
+        this. description = description;
+        this.list = [];
+    }
+    addItem(todoItem) {
+        this.list.push(todoItem);
+    }
+}
+class TodoItem {
     constructor(name,description,dueDate,priority){
         this.name = name;
         this.description = description;
@@ -20,7 +26,7 @@ class todo {
     changeDate(newDate){
         this.dueDate = newDate;
     }
-    changepriority(newImportance){
+    changePriority(newImportance){
         this.priority = newImportance;
     }
     finish(){
@@ -31,6 +37,5 @@ class todo {
     }
     //undo button?
 }
-console.log('hello');
 
-// test doms 
+module.exports = { Project, TodoItem };
