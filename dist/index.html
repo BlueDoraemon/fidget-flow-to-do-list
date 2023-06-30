@@ -7,16 +7,16 @@
     <script src = './main.js' defer></script>
 </head>
 <body>
-<dialog class="newTodo">
-    <form action="">
-        <label for=""></label><input type="text">
+<dialog class="newTodo" open>
+    <form action="" method="dialog">
+        <label for="name"></label><input id = 'name' type="text" required/>
         <ul>
             <li class="tabs">Description</li>
             <li class="tabs">DueDate</li>
             <li class="tabs">tag</li>
         </ul>
         <div id="priorityWrapper">    </div>
-        <button>        </button>
+        <input type="submit" />
     </form>
 </dialog>
 </body>

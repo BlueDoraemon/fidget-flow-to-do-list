@@ -2,6 +2,7 @@
 /**
  * @jest-environment jsdom
  */
+
 const { dropItIn } = require('./domHandler.js');
 
 describe('dropItIn', () => {
